@@ -1,0 +1,716 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	background-color: #000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+#container {
+	width: 908px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 31px;
+	padding-left: 31px;
+}
+#branding {
+	height: 214px;
+	position: relative;
+}
+#branding p {
+	font-size: 30px;
+	color: #FFF;
+	font-weight: bolder;
+	font-variant: small-caps;
+	line-height: 26px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 336px;
+	letter-spacing: 3px;
+}
+
+#logo {
+	width: 180px;
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+/* Button & Searchbar CSS starts here */
+#search {
+	height: 25px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+#search a {
+	background-color: #191818;
+	color: #FFF;
+	line-height: 25px;
+	text-decoration: none;
+	height: 25px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+ #searchbar {
+	width: 100%;
+	padding: 0.1em 0em 0.1em 0em;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+   }
+/* Search Bar 
+   #searchbar {
+   position:relative;
+   top:44px;
+   clear:both;
+   width: 100%;
+   padding: 0.1em 0em 0.1em 0em;
+   background: #fda92a;   
+   border-top: 1px solid #000000;
+   border-bottom: 1px solid #000000;
+   z-index: 0;
+   text-align:center;
+   }
+*/
+   #searchbar form {
+   margin: 0em;
+   padding: 0em;
+   }
+
+   #searchbar #query {
+	width:20em;
+	height:1.6em;
+	font-size: 0.75em;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #000000;
+   }
+
+   #searchbar #submit {
+	width:7em;
+	height:1.6em;
+	font-size: 0.75em;
+	border: 1px solid #000000;
+	vertical-align:bottom;
+	margin-top: 0;
+	margin-right: 0.2em;
+	margin-bottom: 0;
+	margin-left: 0.2em;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0em;
+	padding-left: 0;
+   }
+
+header {
+	font-size: 20px;
+	height: 46px;
+	text-align: center;
+	color: #FFF;
+	background-color: #191818;
+	line-height: 49px;
+	font-weight: bold;
+	padding: 5px;
+}
+#nav {
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 303px;
+}
+#nav ul {
+	list-style-type: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+#nav ul li {
+}
+#nav ul li a {
+	line-height: 31px;
+	color: #cc993e;
+	text-decoration: none;
+	background-color: #000000;
+	display: block;
+	float: left;
+	height: 31px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #333131;
+	border-left-color: #333131;
+}
+#nav ul li a:link {
+	color: #846222;
+}
+#nav ul li a:visited {
+	color: #cc993e;
+}
+#nav ul li a:hover {
+	color: #fff;
+	background-color: #191818;
+}
+#nav ul li a:active {
+	color: #fff;
+}
+#nav ul li.selected {
+    color: #fff;
+	background-color: #191818;
+}
+#nav ul li.selected a {
+   background: #191818;
+   color: #fff;
+}
+
+#activeLink {
+	color: #fff;
+	background-color: #191818;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #af8b51;
+	padding: 0;
+	margin: 0em;
+	width: 200px;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+#imgIAB {
+	height: 346px;
+}
+footer {
+	clear: both;
+}
+footer section {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #cc993e;
+	color: #FFF;
+}
+footer section p a {
+	color: #cc993e;
+	text-decoration: none;
+}
+footer section p a:hover {
+	color: #fff;
+}
+
+#sponsor {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #cc993e;
+	height: 75px;
+	clear: both;
+	color: #FFF;
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#sponsor h4 {
+	float: left;
+	margin-right: 15px;
+	margin-top: 0px;
+}
+
+
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+	orphans: 3;
+	widows: 3;
+	margin: 0pt;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+/* Content Page */
+#content {
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFF;
+}
+#content div {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+#content h3 {
+	text-align: left;
+	background-color: #FFF;
+	font-size: 24px;
+}
+#content #side {
+	width: 330px;
+	padding-right: 7px;
+	background-color: #FFF;
+	height: 620px;
+}
+#content #side hr {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#content #sideContent {
+	width: 550px;
+	background-color: #fff;
+	padding-left: 6px;
+	padding-right: 15px;
+	height: 620px;
+}
+#content #sideContent p {
+	padding-bottom: 9px;
+}
+
+/* Investor Graphic section */
+#investorChart {
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+#investorChart div {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+#investorChart #side {
+	width: 320px;
+	margin-right: 0px;
+	padding-left: 6px;
+	background-color: #fff;
+	padding-right: 10px;
+	height: 400px;
+}
+#investorChart #sideContent {
+	width: 550px;
+	background-color: #fff;
+	padding-left: 6px;
+	padding-right: 15px;
+	text-align: center;
+	height: 400px;
+}
+#investorChart #sideContent table tr th {
+	font-size: 14px;
+}
+#investorChart #sideContent table tr td {
+	padding-top: 12px;
+}
+#investorChart #sideContent table tr {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cc993e;
+}
+
+	 /* The graphe starts here */
+ul.graph
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}	
+ul.graph li
+{
+	margin-bottom: .5em;
+	padding: .2em;
+	background: #600;
+	color: #fff;
+}
+ul.graph li.percent20
+{
+	background: url(../img/graph/graph20.jpg) repeat-y 20% 0;
+}
+ul.graph li.percent40
+{
+	background: url(../img/graph/graph40.jpg) repeat-y 40% 0;
+}
+ul.graph li.percent60
+{
+	background: url(../img/graph/graph60.jpg) repeat-y 60% 0;
+}	
+ul.graph li.percent80
+{
+	background: url(../img/graph/graph80.jpg) repeat-y 80% 0;
+}
+/* end of investor graphic section */
+
+/* Home page Bottom section */
+#bottomSection {
+	color: #9b9a9a;
+	margin: 0px;
+	padding: 0px;
+}
+#bottomSection div {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+#bottomSection #section p a, #section1 p a, #section2 p a {
+	color: #FFF;
+}
+#bottomSection #section {
+	width: 296px;
+	margin-right: 31.5px;
+	padding-left: 5px;
+	background-color: #191818;
+	padding-right: 5px;
+}
+#bottomSection #section p {
+	font-size: 14px;
+	line-height: 16px;
+}
+#bottomSection #section1 p {
+	font-size: 14px;
+	line-height: 16px;
+}
+#bottomSection #section h3{
+	color: #cc993e;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #cc993e;
+	border-bottom-color: #cc993e;
+	width: 296px;
+}
+#bottomSection #section1 h3, #section2 h3 {
+	color: #cc993e;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #cc993e;
+	border-bottom-color: #cc993e;
+	width: 259px;
+}
+#bottomSection #section1 {
+	width: 259px;
+	margin-right: 31px;
+	padding-left: 5px;
+	background-color: #191818;
+	padding-right: 5px;
+}
+#bottomSection #section2 {
+	width: 259px;
+	background-color: #191818;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#bottomSection #section p img , #section1 p img, #section2 p img{
+	padding-right: 5px;
+}
+/* end of Home page Bottom section */
+
+/*MORPH - to change an image link as you hover from square to circle. For more go to http://designshack.net/articles/css/joshuajohnson-2/ */
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/*B&W - to change an image link as you hover from color to B&W. */
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+}

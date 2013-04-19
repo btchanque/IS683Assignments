@@ -201,6 +201,35 @@ header {
     text-shadow: none;
 }
 
+/* figure */
+
+figure {
+    border: solid 2px #555;
+    padding: 2px;
+    margin: 3px 5px 3px 12pt;
+    background-color: #eed;
+}
+
+figure.left {
+    float: left;
+}
+
+figure.right {
+    float: right;
+}
+
+figure img {
+    display: block;
+}
+
+figcaption {
+    font-family: tahoma, sans-serif;
+    font-size: 75%;
+    text-align: center;
+    padding: 3pt 0;
+}
+
+
 /*
  * A better looking default horizontal rule
  */
@@ -504,17 +533,73 @@ textarea {
         page-break-after: avoid;
     }
 }
-/* Content Page */
-#content {
-	color: #000000;
+#mainContent {
+	position: relative;
+}
+#mainContent-whBgd {
+	position: relative;
+	background-color: #FFF;
+}
+
+
+/* About Content Page */
+#aboutContent {
+	background-color: #FFF;
+	padding: 0px;
+}
+#aboutContent div {
+	float: left;
 	margin: 0px;
 	padding: 0px;
 	background-color: #FFF;
 }
+#aboutContent h3 {
+	text-align: left;
+	background-color: #FFF;
+	font-size: 24px;
+}
+#aboutContent #side {
+	width: 313px;
+	margin-right: 0px;
+	padding-left: 13px;
+	background-color: #fff;
+	padding-right: 10px;
+}
+#aboutContent #sideContent {
+	width: 535px;
+	background-color: #fff;
+	padding-left: 20px;
+	padding-right: 15px;
+	text-align: left;
+}
+#aboutContent #side hr {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+#aboutContent #sideContent p {
+	padding-bottom: 9px;
+}
+/* end of About content page */
+
+#content {
+	background-color: #FFF;
+	height: 620px;
+	padding: 0px;
+}
+
+/* Content Page */
+/*#content {
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFF;
+} */
 #content div {
 	float: left;
 	margin: 0px;
 	padding: 0px;
+	background-color: #FFF;
 }
 
 #content h3 {
@@ -522,28 +607,59 @@ textarea {
 	background-color: #FFF;
 	font-size: 24px;
 }
-#content #side {
+/*#content #side {
 	width: 330px;
 	padding-right: 7px;
 	background-color: #FFF;
 	height: 620px;
+}*/
+#content #side {
+	width: 313px;
+	margin-right: 0px;
+	padding-left: 13px;
+	background-color: #fff;
+	padding-right: 10px;
+	height: 580px;
 }
+#content #sideContent {
+	width: 535px;
+	background-color: #fff;
+	padding-left: 20px;
+	padding-right: 15px;
+	text-align: left;
+	height: 580px;
+}
+#content-old #side {
+	width: 330px;
+	padding-right: 7px;
+	background-color: #FFF;
+	float: left;
+}
+
 #content #side hr {
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
 }
-
-
-#content #sideContent {
+/*#content #sideContent {
 	width: 550px;
 	background-color: #fff;
 	padding-left: 6px;
 	padding-right: 15px;
 	height: 620px;
+}*/
+#content-old #sideContent {
+	width: 350px;
+	background-color: #fff;
+	padding-left: 6px;
+	padding-right: 15px;
 }
 #content #sideContent p {
 	padding-bottom: 9px;
+}
+#bottomContent {
+	background-color: #FFF;
+	height: 380px;
 }
 
 /* Investor Graphic section */
@@ -551,6 +667,7 @@ textarea {
 	color: #000000;
 	margin: 0px;
 	padding: 0px;
+	background-color: #FFF;
 }
 #investorChart div {
 	float: left;
@@ -558,24 +675,27 @@ textarea {
 	padding: 0px;
 }
 #investorChart #side {
-	width: 320px;
+	width: 313px;
 	margin-right: 0px;
-	padding-left: 6px;
+	padding-left: 13px;
 	background-color: #fff;
 	padding-right: 10px;
-	height: 400px;
 }
 #investorChart #sideContent {
-	width: 550px;
+	width: 535px;
 	background-color: #fff;
-	padding-left: 6px;
+	padding-left: 20px;
 	padding-right: 15px;
 	text-align: center;
-	height: 400px;
 }
 #investorChart #sideContent table tr th {
 	font-size: 14px;
 }
+#container #investorChart #sideContent p {
+	text-align: left;
+	font-size: 12px;
+}
+
 #investorChart #sideContent table tr td {
 	padding-top: 12px;
 }
@@ -591,31 +711,101 @@ ul.graph
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	width: 400px;
+	font-size: 12px;
 }	
 ul.graph li
 {
-	margin-bottom: .5em;
-	padding: .2em;
+	margin-bottom: 0.5em;
+	padding: 0.2em;
 	background: #600;
-	color: #fff;
+	color: #FFF;
+}
+ul.graph li.percent0
+{
+	background: url(../img/graph/graph0.jpg) repeat-y 0% 0;
+}
+ul.graph li.percent10
+{
+	background: url(../img/graph/graph10.jpg) repeat-y 10% 0;
 }
 ul.graph li.percent20
 {
 	background: url(../img/graph/graph20.jpg) repeat-y 20% 0;
 }
+ul.graph li.percent30
+{
+	background: url(../img/graph/graph30.jpg) repeat-y 30% 0;
+}
 ul.graph li.percent40
 {
 	background: url(../img/graph/graph40.jpg) repeat-y 40% 0;
+}
+ul.graph li.percent50
+{
+	background: url(../img/graph/graph50.jpg) repeat-y 50% 0;
 }
 ul.graph li.percent60
 {
 	background: url(../img/graph/graph60.jpg) repeat-y 60% 0;
 }	
+ul.graph li.percent70
+{
+	background: url(../img/graph/graph70.jpg) repeat-y 70% 0;
+}
 ul.graph li.percent80
 {
 	background: url(../img/graph/graph80.jpg) repeat-y 80% 0;
 }
+ul.graph li.percent90
+{
+	background: url(../img/graph/graph90.jpg) repeat-y 90% 0;
+}
+ul.graph li.percent100
+{
+	background: url(../img/graph/graph100.jpg) repeat-y 100% 0;
+}
 /* end of investor graphic section */
+
+/* Services css page */
+#serviceContent {
+	background-color: #FFF;
+	padding: 0px;
+}
+#serviceContent div {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFF;
+}
+#serviceContent h3 {
+	text-align: left;
+	background-color: #FFF;
+	font-size: 24px;
+}
+#serviceContent #side {
+	width: 313px;
+	margin-right: 0px;
+	padding-left: 13px;
+	background-color: #fff;
+	padding-right: 10px;
+}
+#serviceContent #sideContent {
+	width: 535px;
+	background-color: #fff;
+	padding-left: 20px;
+	padding-right: 15px;
+	text-align: left;
+}
+#serviceContent #side hr {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+#serviceContent #sideContent p {
+	padding-bottom: 9px;
+}
+/* end of services css page */
 
 /* Home page Bottom section */
 #bottomSection {
